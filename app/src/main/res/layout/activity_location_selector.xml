@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customfont="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_location_selector"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context="com.tendercut.prelogin.LocationSelector">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/app_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar">
+
+        <com.tendercut.customview.MyEditText
+            android:id="@+id/locationET"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/et_shadow"
+            android:hint="@string/enter_location"
+            android:paddingLeft="40dp"
+            android:textColor="@color/normal_text_color"
+            android:textColorHint="@color/text_hint"
+            android:textSize="16sp"
+            customfont:et_font_name="@string/ubuntu_regular" />
+
+        <ImageView
+            android:id="@+id/searchIV"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignBottom="@+id/locationET"
+            android:layout_alignLeft="@+id/locationET"
+            android:layout_alignTop="@+id/locationET"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_search" />
+
+        <ImageView
+            android:id="@+id/locationIV"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignBottom="@+id/locationET"
+            android:layout_alignRight="@+id/locationET"
+            android:layout_alignTop="@+id/locationET"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_location" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/footerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp">
+
+        <ImageView
+            android:id="@+id/truck_placeholder"
+            android:layout_width="130dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/truck_placeholder" />
+
+        <com.tendercut.customview.MyTextView
+            android:id="@+id/deliver_in_90"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/truck_placeholder"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/deliver_in_90"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            customfont:tv_font_name="@string/ubuntu_regular" />
+
+        <com.tendercut.customview.MyTextView
+            android:id="@+id/search_your_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/deliver_in_90"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/search_your_area"
+            android:textColor="@color/normal_text_color_light"
+            android:textSize="14sp"
+            customfont:tv_font_name="@string/ubuntu_light" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/search_your_area"
+            android:gravity="center">
+
+
+            <com.tendercut.customview.MyTextView
+                android:id="@+id/powered_by"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/powered_by"
+                android:textColor="@color/normal_text_color_light"
+                android:textSize="10sp"
+                customfont:tv_font_name="@string/ubuntu_light" />
+
+            <ImageView
+                android:id="@+id/google_logo"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/powered_by"
+                android:src="@drawable/ic_google_logo" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

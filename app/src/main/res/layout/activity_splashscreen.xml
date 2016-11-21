@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/splash_gradient"
-    tools:context="com.tendercut.login.SplashscreenActivity">
+    tools:context="com.tendercut.prelogin.SplashscreenActivity">
 
 
 
@@ -13,12 +13,40 @@
         android:layout_width="85dp"
         android:layout_height="85dp"
         android:layout_centerInParent="true"
+        android:id="@+id/logoIV"
         />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:id="@+id/leftView"
+        android:layout_alignTop="@+id/gifIV"
+        android:layout_alignBottom="@+id/gifIV"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/gifIV"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/dotted_line_splash"
+        android:layerType="software"/>
 
     <ImageView
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:layout_centerHorizontal="true"
+        android:id="@+id/gifIV"
+        android:layout_marginBottom="73dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="75dp"/>
+        android:layout_centerHorizontal="true" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:id="@+id/rightView"
+        android:layout_alignTop="@+id/gifIV"
+        android:layout_alignBottom="@+id/gifIV"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/gifIV"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/dotted_line_splash"
+        android:layerType="software"/>
 </RelativeLayout>
