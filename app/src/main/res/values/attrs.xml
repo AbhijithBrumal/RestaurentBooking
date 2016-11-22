@@ -15,6 +15,10 @@
     <declare-styleable name="MyAutoCompleteTextView">
         <attr name="autoCompleteTextViewFontName" format="string" />
     </declare-styleable>
+    
+    <declare-styleable name="MyCheckBox">
+        <attr name="checkbox_font_name" format="string"/>
+    </declare-styleable>
 
 
 </resources>

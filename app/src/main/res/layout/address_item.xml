@@ -4,6 +4,7 @@
     android:layout_height="wrap_content"
     android:background="@color/colorWhite"
     android:paddingLeft="16dp"
+    xmlns:customfont="http://schemas.android.com/apk/res-auto"
     android:paddingRight="16dp"
     android:paddingTop="16dp">
 
@@ -13,13 +14,14 @@
         android:layout_height="30dp"
         android:src="@drawable/ic_location" />
 
-    <com.tendercut.widgets.UbuntuRegularTextView
+    <com.tendercut.customview.MyTextView
         android:id="@+id/address_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="35dp"
         android:layout_toRightOf="@id/location_iv"
+        customfont:tv_font_name="@string/ubuntu_regular"
         android:text="@string/adress_dummy"
         android:textColor="@color/colorBlackRegular"
         android:textSize="12sp" />

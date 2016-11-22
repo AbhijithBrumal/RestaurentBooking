@@ -11,26 +11,33 @@ import com.tendercut.R;
 import com.tendercut.customview.MyEditText;
 import com.tendercut.customview.MyTextView;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class LocationSelector extends AppCompatActivity {
 
-    @Bind(R.id.toolbarText)
+    @BindView(R.id.toolbarText)
     MyTextView toolbarText;
-    @Bind(R.id.locationET)
+    @BindView(R.id.locationET)
     MyEditText locationET;
-    @Bind(R.id.locationIV)
+    @BindView(R.id.locationIV)
     ImageView locationIV;
-    @Bind(R.id.footerView)
-    RelativeLayout footerView;
-    @Bind(R.id.searchRL)
+    @BindView(R.id.closeIV)
+    ImageView closeIV;
+    @BindView(R.id.searchRL)
     RelativeLayout searchRL;
-    @Bind(R.id.currentLocationRL)
+    @BindView(R.id.currentLocationTV)
+    MyTextView currentLocationTV;
+    @BindView(R.id.currentLocationRL)
     RelativeLayout currentLocationRL;
-    @Bind(R.id.locationListView)
+    @BindView(R.id.locationListView)
     ListView locationListView;
-
+    @BindView(R.id.oops_no_store)
+    ImageView oopsNoStore;
+    @BindView(R.id.truck_placeholder)
+    ImageView truckPlaceholder;
+    @BindView(R.id.footerView)
+    RelativeLayout footerView;
     private Toolbar toolbar;
 
     @Override

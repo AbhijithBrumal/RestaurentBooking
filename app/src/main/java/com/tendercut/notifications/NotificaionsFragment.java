@@ -20,7 +20,6 @@ public class NotificaionsFragment extends Fragment {
 
     @BindView(R.id.notifications_rv)
     RecyclerView notificationsRv;
-
     private NotificationsAdapter mNotificationsAdapter;
 
     public NotificaionsFragment() {

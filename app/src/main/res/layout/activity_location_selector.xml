@@ -51,8 +51,9 @@
             android:layout_alignRight="@+id/locationET"
             android:layout_alignTop="@+id/locationET"
             android:layout_marginRight="10dp"
-            android:visibility="gone"
-            android:src="@drawable/ic_location" />
+            android:src="@drawable/ic_location"
+            android:visibility="gone" />
+
         <ImageView
             android:id="@+id/closeIV"
             android:layout_width="22dp"
@@ -68,8 +69,8 @@
         android:id="@+id/currentLocationRL"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:visibility="invisible"
-        android:layout_below="@+id/searchRL">
+        android:layout_below="@+id/searchRL"
+        android:visibility="invisible">
 
 
         <com.tendercut.customview.MyTextView
@@ -100,21 +101,21 @@
     </RelativeLayout>
 
     <ListView
-        android:layout_width="match_parent"
-        android:layout_below="@+id/currentLocationRL"
         android:id="@+id/locationListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/currentLocationRL"
+        android:layout_marginBottom="10dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="10dp"
-        android:layout_height="wrap_content"/>
+        android:layout_marginTop="15dp" />
+
     <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
         android:id="@+id/oops_no_store"
-        android:src="@drawable/oops_no_store"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_centerInParent="true"
-        />
+        android:src="@drawable/oops_no_store" />
 
     <RelativeLayout
         android:id="@+id/footerView"

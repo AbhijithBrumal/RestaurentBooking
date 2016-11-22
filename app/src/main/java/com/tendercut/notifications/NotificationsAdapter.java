@@ -8,8 +8,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.tendercut.R;
-import com.tendercut.widgets.UbuntuMedumTextView;
-import com.tendercut.widgets.UbuntuRegularTextView;
+import com.tendercut.customview.MyTextView;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -49,14 +48,15 @@ public class NotificationsAdapter extends RecyclerView.Adapter<NotificationsAdap
         @BindView(R.id.notification_iv)
         ImageView notificationIv;
         @BindView(R.id.title_tv)
-        UbuntuMedumTextView titleTv;
+        MyTextView titleTv;
         @BindView(R.id.time_date_tv)
-        UbuntuRegularTextView timeDateTv;
+        MyTextView timeDateTv;
         @BindView(R.id.content_tv)
-        UbuntuRegularTextView contentTv;
+        MyTextView contentTv;
+
         public NotificationHolder(View itemView) {
             super(itemView);
-            ButterKnife.bind(this,itemView);
+            ButterKnife.bind(this, itemView);
         }
     }
 }

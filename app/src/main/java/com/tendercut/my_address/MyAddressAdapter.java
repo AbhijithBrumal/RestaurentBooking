@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
 import com.tendercut.R;
-import com.tendercut.widgets.UbuntuRegularTextView;
+import com.tendercut.customview.MyTextView;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -20,6 +20,7 @@ import butterknife.ButterKnife;
  */
 
 public class MyAddressAdapter extends RecyclerView.Adapter<MyAddressAdapter.AddressHolder> {
+
 
 
     private int selectedPosition = 0;
@@ -54,12 +55,12 @@ public class MyAddressAdapter extends RecyclerView.Adapter<MyAddressAdapter.Addr
             }
         });
 
-        if (position==selectedPosition){
+        if (position == selectedPosition) {
             holder.addressTv.setTextColor(mContext.getResources().getColor(R.color.colorBlackRegular));
-            holder.locationIv.setColorFilter(Color.argb(255,198,32,48));
-        }else{
+            holder.locationIv.setColorFilter(Color.argb(255, 198, 32, 48));
+        } else {
             holder.addressTv.setTextColor(mContext.getResources().getColor(R.color.colorBlackLight));
-            holder.locationIv.setColorFilter(Color.argb(200,134,134,134));
+            holder.locationIv.setColorFilter(Color.argb(200, 134, 134, 134));
         }
     }
 
@@ -69,15 +70,15 @@ public class MyAddressAdapter extends RecyclerView.Adapter<MyAddressAdapter.Addr
     }
 
     public class AddressHolder extends RecyclerView.ViewHolder {
-
         @BindView(R.id.location_iv)
         ImageView locationIv;
         @BindView(R.id.address_tv)
-        UbuntuRegularTextView addressTv;
+        MyTextView addressTv;
         @BindView(R.id.edit_iv)
         ImageView editIv;
         @BindView(R.id.edit_rl)
         RelativeLayout editRl;
+
         public AddressHolder(View itemView) {
             super(itemView);
             ButterKnife.bind(this, itemView);

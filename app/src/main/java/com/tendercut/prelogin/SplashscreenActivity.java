@@ -7,13 +7,15 @@ import android.widget.ImageView;
 import com.bumptech.glide.Glide;
 import com.tendercut.R;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class SplashscreenActivity extends AppCompatActivity {
-    @Bind(R.id.logoIV)
+
+
+    @BindView(R.id.logoIV)
     ImageView logoIV;
-    @Bind(R.id.gifIV)
+    @BindView(R.id.gifIV)
     ImageView gifIV;
 
     @Override

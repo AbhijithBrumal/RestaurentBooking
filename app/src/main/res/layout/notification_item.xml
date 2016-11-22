@@ -6,13 +6,14 @@
     android:paddingTop="16dp"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
+    xmlns:customfont="http://schemas.android.com/apk/res-auto"
     android:layout_height="wrap_content">
 <ImageView
     android:id="@+id/notification_iv"
     android:layout_width="30dp"
     android:layout_height="30dp"
     android:src="@drawable/ic_notifications"/>
-    <com.tendercut.widgets.UbuntuMedumTextView
+    <com.tendercut.customview.MyTextView
         android:id="@+id/title_tv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -20,20 +21,23 @@
         android:layout_marginRight="95dp"
         android:text="@string/lorem_ipusam"
         android:textSize="14sp"
+        customfont:tv_font_name="@string/ubuntu_regular"
         android:textColor="@color/colorBlackRegular"/>
-    <com.tendercut.widgets.UbuntuRegularTextView
+    <com.tendercut.customview.MyTextView
         android:id="@+id/time_date_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:text="Mon, 12am"
+        customfont:tv_font_name="@string/ubuntu_regular"
         android:textSize="12sp"
         android:textColor="@color/colorBlackLight"
         android:layout_marginTop="4dp"/>
-    <com.tendercut.widgets.UbuntuRegularTextView
+    <com.tendercut.customview.MyTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/content_tv"
+        customfont:tv_font_name="@string/ubuntu_regular"
         android:layout_below="@id/title_tv"
         android:layout_toRightOf="@id/notification_iv"
         android:layout_marginTop="5dp"
