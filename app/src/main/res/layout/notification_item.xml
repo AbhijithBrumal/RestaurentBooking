@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:paddingTop="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:layout_height="wrap_content">
+<ImageView
+    android:id="@+id/notification_iv"
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:src="@drawable/ic_notifications"/>
+    <com.tendercut.widgets.UbuntuMedumTextView
+        android:id="@+id/title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/notification_iv"
+        android:layout_marginRight="95dp"
+        android:text="@string/lorem_ipusam"
+        android:textSize="14sp"
+        android:textColor="@color/colorBlackRegular"/>
+    <com.tendercut.widgets.UbuntuRegularTextView
+        android:id="@+id/time_date_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="Mon, 12am"
+        android:textSize="12sp"
+        android:textColor="@color/colorBlackLight"
+        android:layout_marginTop="4dp"/>
+    <com.tendercut.widgets.UbuntuRegularTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/content_tv"
+        android:layout_below="@id/title_tv"
+        android:layout_toRightOf="@id/notification_iv"
+        android:layout_marginTop="5dp"
+        android:text="@string/lorem_ipusam_main"
+        android:textColor="@color/colorBlackLight"
+        android:textSize="12sp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/content_tv"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorBlackLight"/>
+    
+</RelativeLayout>

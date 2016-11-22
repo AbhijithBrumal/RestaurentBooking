@@ -1,3 +1,18 @@
 <resources>
-    <string name="app_name">Tendercut</string>
+    <string name="app_name">TenderCuts</string>
+    <string name="email_id">Email ID</string>
+    <string name="password">Password</string>
+    <string name="remeber_me">Remember me</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login">LOGIN</string>
+    <string name="or">OR</string>
+    <string name="email">Email ID</string>
+    <string name="create_an_account">Create an account?</string>
+    <string name="sign_up">Sign Up</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lorem_ipusam">Lorem ipsum dolor sit amet</string>
+    <string name="lorem_ipusam_main">Lorem ipsum dolor. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</string>
+    <string name="adress_dummy">Venkateshwara Avenue, Door No. 667, OMR, PTC-, Chennai, Tamil Nadu 600097</string>
 </resources>
