@@ -22,7 +22,7 @@
         android:layout_marginRight="35dp"
         android:layout_toRightOf="@id/location_iv"
         customfont:tv_font_name="@string/ubuntu_regular"
-        android:text="@string/adress_dummy"
+        android:text="@string/address_dummy"
         android:textColor="@color/colorBlackRegular"
         android:textSize="12sp" />
 
