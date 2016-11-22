@@ -15,4 +15,16 @@
     <string name="lorem_ipusam">Lorem ipsum dolor sit amet</string>
     <string name="lorem_ipusam_main">Lorem ipsum dolor. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</string>
     <string name="adress_dummy">Venkateshwara Avenue, Door No. 667, OMR, PTC-, Chennai, Tamil Nadu 600097</string>
+
+
+    <string name="ubuntu_regular">ubuntu_regular.ttf</string>
+    <string name="ubuntu_medium">ubuntu_medium.ttf</string>
+    <string name="ubuntu_light">ubuntu_light.ttf</string>
+
+    <string name="enter_location">Search location</string>
+    <string name="deliver_in_90">We deliver in 90 minutes</string>
+    <string name="search_your_area">Search for your area and get started</string>
+    <string name="powered_by">powered by</string>
+    <string name="title_location_selector">Select Your Area</string>
+    <string name="select_current_location">Select Current Location Using GPS</string>
 </resources>

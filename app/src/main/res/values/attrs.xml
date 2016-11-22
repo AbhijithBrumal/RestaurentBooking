@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MyTextView">
+        <attr name="tv_font_name" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="MyEditText">
+        <attr name="et_font_name" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="MyButton">
+        <attr name="button_font_name" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="MyAutoCompleteTextView">
+        <attr name="autoCompleteTextViewFontName" format="string" />
+    </declare-styleable>
+
+
+</resources>
