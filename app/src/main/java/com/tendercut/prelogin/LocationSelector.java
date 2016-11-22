@@ -4,8 +4,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.RelativeLayout;
-import android.widget.TextView;
 
 import com.tendercut.R;
 import com.tendercut.customview.MyEditText;
@@ -24,8 +24,15 @@ public class LocationSelector extends AppCompatActivity {
     ImageView locationIV;
     @Bind(R.id.footerView)
     RelativeLayout footerView;
+    @Bind(R.id.searchRL)
+    RelativeLayout searchRL;
+    @Bind(R.id.currentLocationRL)
+    RelativeLayout currentLocationRL;
+    @Bind(R.id.locationListView)
+    ListView locationListView;
 
     private Toolbar toolbar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

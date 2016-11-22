@@ -5,9 +5,10 @@
     <string name="ubuntu_medium">ubuntu_medium.ttf</string>
     <string name="ubuntu_light">ubuntu_light.ttf</string>
 
-    <string name="enter_location">Enter Your location</string>
+    <string name="enter_location">Search location</string>
     <string name="deliver_in_90">We deliver in 90 minutes</string>
     <string name="search_your_area">Search for your area and get started</string>
     <string name="powered_by">powered by</string>
     <string name="title_location_selector">Select Your Area</string>
+    <string name="select_current_location">Select Current Location Using GPS</string>
 </resources>

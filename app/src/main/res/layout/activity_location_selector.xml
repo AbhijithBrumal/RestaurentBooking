@@ -13,6 +13,7 @@
         layout="@layout/app_bar" />
 
     <RelativeLayout
+        android:id="@+id/searchRL"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/toolbar">
@@ -21,7 +22,9 @@
             android:id="@+id/locationET"
             android:layout_width="match_parent"
             android:layout_height="45dp"
-            android:layout_margin="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
             android:background="@drawable/et_shadow"
             android:hint="@string/enter_location"
             android:paddingLeft="40dp"
@@ -48,8 +51,70 @@
             android:layout_alignRight="@+id/locationET"
             android:layout_alignTop="@+id/locationET"
             android:layout_marginRight="10dp"
+            android:visibility="gone"
             android:src="@drawable/ic_location" />
+        <ImageView
+            android:id="@+id/closeIV"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignBottom="@+id/locationET"
+            android:layout_alignRight="@+id/locationET"
+            android:layout_alignTop="@+id/locationET"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_close" />
     </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/currentLocationRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_below="@+id/searchRL">
+
+
+        <com.tendercut.customview.MyTextView
+            android:id="@+id/currentLocationTV"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/et_shadow"
+            android:gravity="center_vertical"
+            android:paddingLeft="40dp"
+            android:text="@string/select_current_location"
+            android:textColor="@color/normal_text_color"
+            android:textColorHint="@color/text_hint"
+            android:textSize="16sp"
+            customfont:tv_font_name="@string/ubuntu_regular" />
+
+        <ImageView
+            android:id="@+id/currentLocationIV"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignBottom="@+id/currentLocationTV"
+            android:layout_alignLeft="@+id/currentLocationTV"
+            android:layout_alignTop="@+id/currentLocationTV"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_current_location" />
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/currentLocationRL"
+        android:id="@+id/locationListView"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/oops_no_store"
+        android:src="@drawable/oops_no_store"
+        android:layout_centerInParent="true"
+        />
 
     <RelativeLayout
         android:id="@+id/footerView"
