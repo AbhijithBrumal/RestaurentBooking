@@ -1,29 +1,33 @@
-package com.tendercut.my_address;
+package com.tendercut.about_us;
 
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RelativeLayout;
 
 import com.tendercut.R;
-import com.tendercut.notifications.NotificationsAdapter;
+import com.tendercut.customview.MyTextView;
 
-import butterknife.BindView;
+import butterknife.Bind;
 import butterknife.ButterKnife;
 
-public class MyAddressFragment extends Fragment implements MyAddressAdapter.OnRecyclerClick {
+public class AboutUsFragment extends Fragment implements View.OnClickListener {
 
-    @BindView(R.id.my_address_rv)
-    RecyclerView myAddressRv;
 
-    MyAddressAdapter mMyAddressAdapter;
+    @Bind(R.id.aboutus_content_tv)
+    MyTextView aboutusContentTv;
+    @Bind(R.id.privacy_rl)
+    RelativeLayout privacyRl;
+    @Bind(R.id.terms_rl)
+    RelativeLayout termsRl;
+    @Bind(R.id.activity_about_us)
+    RelativeLayout activityAboutUs;
 
-    public MyAddressFragment() {
+    public AboutUsFragment() {
         // Required empty public constructor
     }
 
@@ -38,7 +42,7 @@ public class MyAddressFragment extends Fragment implements MyAddressAdapter.OnRe
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_add_address, container, false);
+        View view = inflater.inflate(R.layout.fragment_about_us, container, false);
         ButterKnife.bind(this, view);
         return view;
     }
@@ -46,10 +50,7 @@ public class MyAddressFragment extends Fragment implements MyAddressAdapter.OnRe
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-
-        myAddressRv.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false));
-        mMyAddressAdapter = new MyAddressAdapter(getActivity(), this);
-        myAddressRv.setAdapter(mMyAddressAdapter);
+        privacyRl.setOnClickListener(this);
     }
 
     @Override
@@ -61,12 +62,17 @@ public class MyAddressFragment extends Fragment implements MyAddressAdapter.OnRe
     @Override
     public void onDetach() {
         super.onDetach();
-
     }
 
 
     @Override
-    public void itemClicked(int position) {
+    public void onDestroyView() {
+        super.onDestroyView();
+        ButterKnife.unbind(this);
+    }
+
+    @Override
+    public void onClick(View view) {
 
     }
 }

@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import com.tendercut.R;
 import com.tendercut.customview.MyTextView;
 
-import butterknife.BindView;
+import butterknife.Bind;
 import butterknife.ButterKnife;
 
 /**
@@ -18,6 +18,7 @@ import butterknife.ButterKnife;
  */
 
 public class NotificationsAdapter extends RecyclerView.Adapter<NotificationsAdapter.NotificationHolder> {
+
 
 
     private Context mContext;
@@ -44,14 +45,13 @@ public class NotificationsAdapter extends RecyclerView.Adapter<NotificationsAdap
     }
 
     public class NotificationHolder extends RecyclerView.ViewHolder {
-
-        @BindView(R.id.notification_iv)
+        @Bind(R.id.notification_iv)
         ImageView notificationIv;
-        @BindView(R.id.title_tv)
+        @Bind(R.id.title_tv)
         MyTextView titleTv;
-        @BindView(R.id.time_date_tv)
+        @Bind(R.id.time_date_tv)
         MyTextView timeDateTv;
-        @BindView(R.id.content_tv)
+        @Bind(R.id.content_tv)
         MyTextView contentTv;
 
         public NotificationHolder(View itemView) {

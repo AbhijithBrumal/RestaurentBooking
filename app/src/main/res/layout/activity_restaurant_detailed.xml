@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customfont="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_restaurant_detailed"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="com.tendercut.restaurant_details.RestaurantDetailedActivity">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/app_bar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/restaurant_fl"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <ImageView
+                    android:id="@+id/restaurant_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/colorWhiteAlpha"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <!-- <com.tendercut.customview.MyTextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="30dp"
+                         android:gravity="center"
+                         android:drawableLeft="@drawable/ic_like"
+                         android:drawablePadding="5dp"
+                         android:text="38 People like this"
+                         android:textSize="12sp"
+                         android:layout_marginLeft="10dp"
+                         customfont:tv_font_name="@string/ubuntu_regular"
+                         android:textColor="@color/colorBlackRegular"
+                         android:layout_centerVertical="true"
+                         android:layout_marginRight="10dp"/>
+
+
+                     <com.tendercut.customview.MyTextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="30dp"
+                         android:gravity="center"
+                         android:drawableLeft="@drawable/ic_heart"
+                         android:drawablePadding="5dp"
+                         android:text="25 People marked as Favorite"
+                         android:textSize="12sp"
+                         customfont:tv_font_name="@string/ubuntu_regular"
+                         android:textColor="@color/colorBlackRegular"
+                         android:layout_centerVertical="true"
+                         android:layout_alignParentRight="true"
+                         android:layout_marginRight="10dp"/>-->
+
+                    <com.tendercut.customview.MyTextView
+                        android:id="@+id/discription_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorBlackRegular"
+                        android:textSize="12sp"
+                        customfont:tv_font_name="@string/ubuntu_light" />
+
+
+                </RelativeLayout>
+
+
+                <com.tendercut.customview.MyTextView
+                    android:id="@+id/place_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/color_black_alfa"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="10dp"
+                    android:text=""
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp"
+                    customfont:tv_font_name="@string/ubuntu_medium" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.AppCompatRatingBar
+                android:id="@+id/rating_bar"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/restaurant_fl"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:clickable="false"
+                android:isIndicator="true"
+                android:rating="3"
+                android:theme="@style/RatingBar" />
+
+            <com.tendercut.customview.MyTextView
+                android:id="@+id/time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/restaurant_fl"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/colorBlackRegular"
+                android:textSize="14sp"
+                customfont:tv_font_name="@string/ubuntu_medium" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rating_bar"
+                android:padding="10dp">
+
+
+                <android.support.v4.widget.NestedScrollView
+                    android:id="@+id/fecilities_nsv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.tendercut.customview.MyTextView
+                            android:id="@+id/fecilities_title_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:text="Facilities Available"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="14sp"
+                            customfont:tv_font_name="@string/ubuntu_medium" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/fecilities_rv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/fecilities_title_tv" />
+
+                    </RelativeLayout>
+                </android.support.v4.widget.NestedScrollView>
+
+                <android.support.v4.widget.NestedScrollView
+                    android:id="@+id/select_time_nsv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fecilities_nsv">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <com.tendercut.customview.MyTextView
+                            android:id="@+id/select_time_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="0dp"
+                            android:gravity="start|center"
+
+                            android:text="Select your time"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="14sp"
+                            customfont:tv_font_name="@string/ubuntu_medium" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/time_slot_rv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/select_time_title"
+                            android:layout_weight="1" />
+
+                    </RelativeLayout>
+                </android.support.v4.widget.NestedScrollView>
+
+
+                <!-- <com.tendercut.customview.MyTextView
+                     android:layout_width="match_parent"
+                     android:layout_height="40dp"
+                     android:hint="Number of chairs for"
+                     android:id="@+id/num_chair_title"
+                     android:textColor="@color/colorPrimary"
+                     android:textSize="14sp"
+                     android:layout_below="@+id/select_time_title"
+                     android:gravity="start|center"
+                     android:layout_marginTop="20dp"
+                     customfont:tv_font_name="@string/ubuntu_medium"/>
+
+-->
+                <android.support.v4.widget.NestedScrollView
+                    android:id="@+id/pic_table_title_nsv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/select_time_nsv">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <com.tendercut.customview.MyTextView
+                            android:id="@+id/pic_table_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Pick your table"
+                            android:textColor="@color/colorPrimary"
+
+                            android:textSize="14sp"
+                            customfont:tv_font_name="@string/ubuntu_medium" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/tabele_name_rv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/pic_table_title"
+                            android:layout_weight="1"
+                            android:layout_marginBottom="45dp"/>
+
+                    </RelativeLayout>
+                </android.support.v4.widget.NestedScrollView>
+
+
+                <!-- <ImageView
+                     android:layout_width="match_parent"
+                     android:layout_height="150dp"
+                     android:layout_marginLeft="40dp"
+                     android:layout_marginRight="40dp"
+                     android:scaleType="fitXY"
+                     android:id="@+id/table_iv"
+                     android:src="@drawable/tablemap_dummy"
+                     android:layout_below="@+id/fecilities_ll"
+                     android:layout_marginTop="14dp" />
+
+                 <com.tendercut.customview.MyTextView
+                     android:id="@+id/table_name_tv"
+                     android:layout_width="match_parent"
+                     android:layout_height="35dp"
+                     android:gravity="center|left"
+                     android:drawableRight="@drawable/ic_down_arrow"
+                     android:text="Pick your table"
+                     android:textColor="@color/colorBlackRegular"
+                     android:textSize="14sp"
+                     android:layout_marginTop="10dp"
+                     customfont:tv_font_name="@string/ubuntu_regular"
+                     android:layout_below="@+id/table_iv"/>
+                 <View
+                     android:layout_width="match_parent"
+                     android:layout_height="0.5dp"
+                     android:background="@color/colorBlackRegular"
+                     android:layout_below="@id/table_name_tv"/>
+
+                 <com.tendercut.customview.MyTextView
+                     android:id="@+id/time_tv"
+                     android:layout_width="match_parent"
+                     android:layout_height="35dp"
+                     android:gravity="center|left"
+                     android:drawableRight="@drawable/ic_down_arrow"
+                     android:text="Pick your time"
+                     android:textColor="@color/colorBlackRegular"
+                     android:textSize="14sp"
+                     customfont:tv_font_name="@string/ubuntu_regular"
+                     android:layout_below="@+id/table_name_tv"
+                     android:layout_marginTop="10dp"/>
+                 <View
+                     android:layout_width="match_parent"
+                     android:layout_height="0.5dp"
+                     android:background="@color/colorBlackRegular"
+                     android:layout_below="@id/time_tv"/>-->
+                <!--  <com.tendercut.customview.MyTextView
+                      android:id="@+id/menu_tv"
+                      android:layout_width="match_parent"
+                      android:layout_height="35dp"
+                      android:gravity="center|left"
+                      android:drawableRight="@drawable/ic_down_arrow"
+                      android:text="Pick your food"
+                      android:textColor="@color/colorBlackRegular"
+                      android:textSize="14sp"
+                      customfont:tv_font_name="@string/ubuntu_regular"
+                      android:layout_below="@+id/time_tv"
+                      android:layout_marginTop="10dp"/>
+                  <View
+                      android:layout_width="match_parent"
+                      android:layout_height="0.5dp"
+                      android:background="@color/colorBlackRegular"
+                      android:layout_below="@id/menu_tv"/>
+
+
+  -->
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.tendercut.customview.MyButton
+        android:id="@+id/continue_btn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/ripple_drawable_common"
+        android:text="Continue"
+        android:textAllCaps="false" />
+</RelativeLayout>

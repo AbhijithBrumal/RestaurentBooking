@@ -14,7 +14,7 @@
         customfont:tv_font_name="@string/ubuntu_medium"
         android:gravity="center"
         android:textColor="@android:color/white"
-        android:textSize="20sp"
+        android:textSize="16sp"
         android:id="@+id/toolbarText"/>
 
 

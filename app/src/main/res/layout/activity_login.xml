@@ -27,23 +27,7 @@
             android:layout_marginTop="25dp"
             android:background="@drawable/edittext_bg"
             android:hint="@string/email"
-            android:inputType="textEmailAddress|textNoSuggestions"
-            android:longClickable="false"
-            android:maxLines="1"
-            android:textColor="@color/colorBlackRegular"
-            android:textColorHint="@color/colorBlackLight"
-            android:textSize="14sp"
-            customfont:et_font_name="@string/ubuntu_regular" />
-
-        <com.tendercut.customview.MyEditText
-            android:id="@+id/password_et"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_below="@+id/email_et"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/edittext_bg"
-            android:hint="@string/password"
-            android:inputType="textNoSuggestions|textPassword"
+            android:inputType="textNoSuggestions"
             android:longClickable="false"
             android:maxLines="1"
             android:textColor="@color/colorBlackRegular"
@@ -62,7 +46,7 @@
             android:text="@string/remember_me"
             android:textColor="@color/normal_text_color"
             android:textSize="14sp"
-            customfont:checkbox_font_name="@string/ubuntu_regular" />
+            customfont:checkbox_font_name="@string/ubuntu_medium" />
 
         <com.tendercut.customview.MyTextView
             android:id="@+id/forgot_tv"
@@ -75,21 +59,21 @@
             android:text="@string/forgot_password"
             android:textColor="@drawable/red_text_selector"
             android:textSize="14sp"
-            customfont:tv_font_name="@string/ubuntu_regular" />
+            customfont:tv_font_name="@string/ubuntu_medium" />
 
-        <com.tendercut.customview.MyTextView
+        <com.tendercut.customview.MyButton
             android:id="@+id/login_btn_tv"
             android:layout_width="90dp"
             android:layout_height="35dp"
             android:layout_below="@+id/forgot_tv"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="36dp"
-            android:background="@drawable/white_button_selector"
+            android:background="@drawable/ripple_drawable_btn"
             android:clickable="true"
             android:gravity="center"
             android:text="@string/login"
             android:textColor="@color/colorPrimary"
-            customfont:tv_font_name="@string/ubuntu_regular" />
+            customfont:tv_font_name="@string/ubuntu_medium" />
 
         <RelativeLayout
             android:id="@+id/or_rl"
@@ -114,7 +98,7 @@
                 android:layout_marginRight="5dp"
                 android:layout_marginTop="8dp"
                 android:layout_toLeftOf="@+id/or_tv"
-                android:background="@color/colorBlackLight" />
+                android:background="@color/colorHighlight" />
 
             <View
                 android:layout_width="match_parent"
@@ -122,10 +106,10 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="8dp"
                 android:layout_toRightOf="@+id/or_tv"
-                android:background="@color/colorBlackLight" />
+                android:background="@color/colorHighlight" />
         </RelativeLayout>
 
-        <LinearLayout
+       <!-- <LinearLayout
             android:id="@+id/social_ll"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -148,13 +132,13 @@
                 android:layout_marginLeft="8dp"
                 android:layout_marginTop="36dp"
                 android:background="@drawable/iv_facebook" />
-        </LinearLayout>
+        </LinearLayout>-->
 
         <LinearLayout
             android:id="@+id/signup_ll"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/social_ll"
+            android:layout_below="@id/or_rl"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="36dp"
             android:clickable="true"
@@ -167,7 +151,7 @@
                 android:text="@string/create_an_account"
                 android:textColor="@color/colorBlackRegular"
                 android:textSize="14sp"
-                customfont:tv_font_name="@string/ubuntu_regular" />
+                customfont:tv_font_name="@string/ubuntu_medium" />
 
             <com.tendercut.customview.MyTextView
                 android:id="@+id/sign_up"
@@ -177,8 +161,26 @@
                 android:text="@string/sign_up"
                 android:textColor="@drawable/red_text_selector"
                 android:textSize="14sp"
-                customfont:tv_font_name="@string/ubuntu_regular" />
+                customfont:tv_font_name="@string/ubuntu_medium" />
         </LinearLayout>
+
+        <com.tendercut.customview.MyEditText
+            android:id="@+id/password_et"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edittext_bg"
+            android:hint="@string/password"
+            android:inputType="textNoSuggestions|textPassword"
+            android:longClickable="false"
+            android:maxLines="1"
+            android:textColor="@color/colorBlackRegular"
+            android:textColorHint="@color/colorBlackLight"
+            android:textSize="14sp"
+            customfont:et_font_name="@string/ubuntu_regular"
+            android:layout_below="@+id/email_et"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
     </RelativeLayout>
 
 </RelativeLayout>

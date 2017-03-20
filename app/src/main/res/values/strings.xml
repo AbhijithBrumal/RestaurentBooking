@@ -1,21 +1,21 @@
 <resources>
-    <string name="app_name">TenderCuts</string>
+    <string name="app_name">BookingApp</string>
     <string name="email_id">Email ID</string>
     <string name="password">Password</string>
     <string name="remember_me">Remember me</string>
     <string name="forgot_password">Forgot Password?</string>
     <string name="login">LOGIN</string>
     <string name="or">OR</string>
-    <string name="email">Email ID</string>
+    <string name="email">Email/Phone</string>
     <string name="create_an_account">Create an account?</string>
     <string name="sign_up">Sign Up</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="lorem_ipsum">Lorem ipsum dolor sit amet</string>
-    <string name="lorem_ipsum_main">Lorem ipsum dolor. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</string>
+    <string name="lorem_ipsum_main">Lorem ipsum dolor. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo  Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat</string>
     <string name="address_dummy">Venkateshwara Avenue, Door No. 667, OMR, PTC-, Chennai, Tamil Nadu 600097</string>
-
+    <string name="lorem_ipsumDummy">Lorem ipsum dolor sit ametQuis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo  Quis laboris nisi ut aliquip ex ea </string>
 
     <string name="ubuntu_regular">ubuntu_regular.ttf</string>
     <string name="ubuntu_medium">ubuntu_medium.ttf</string>
@@ -27,4 +27,71 @@
     <string name="powered_by">powered by</string>
     <string name="title_location_selector">Select Your Area</string>
     <string name="select_current_location">Select Current Location Using GPS</string>
+    <string name="notifications">Notifications</string>
+    <string name="my_address">My Address</string>
+    <string name="name_dummy">Abhijith Brumal</string>
+    <string name="email_dummy">abhijith@focaloid.com</string>
+    <string name="phone_dummy">9387771118</string>
+    <string name="tendercuts_credits">Tendercuts Credits</string>
+    <string name="credit_equation">1 credit = \u20B91</string>
+    <string name="Rs">\u20B9</string>
+    <string name="Rs967">\u20B9 120.00</string>
+    <string name="elite_customer">Elite\nCustomer</string>
+    <string name="elite_qualification">Buy for 100 more this month to maintain your elite customer membership</string>
+    <string name="reffer_n_earn">REFFER AND EARN</string>
+    <string name="profile">Profile</string>
+    <string name="privacy_policy">PRIVACY POLICY</string>
+    <string name="terms_use">TERMS OF USE</string>
+    <string name="aboutus">About Us</string>
+    <string name="loyality_details">Loyality Program Details</string>
+    <string name="loyality_program">Loyality Program</string>
+    <string name="products">Products</string>
+    <string name="recipes">Recipes</string>
+    <string name="products_name_dummy">Chicken Boneless</string>
+    <string name="products_price_dummy">\u20B9 50</string>
+    <string name="products_description_dummy">Gross Weight 750gm  |   Net Weight 500gm</string>
+    <string name="favorites">Favorites</string>
+    <string name="read_more">Read more...</string>
+    <string name="recipe_name_dummy">Chicken Roast</string>
+    <string name="time2cook">Time to cook</string>
+    <string name="time2cook_dummy">6:21 m</string>
+    <string name="tc_marinades">TC marinades time</string>
+    <string name="serve_time_dummy">5</string>
+    <string name="serves">Serves</string>
+    <string name="description">Description</string>
+    <string name="ingradiant_name">Chicken pieces</string>
+    <string name="ingradiant_weight_dummy">Gross Weight 750gms \nNet Weight 500gms</string>
+    <string name="ingrediants">Ingredients</string>
+    <string name="method">Method</string>
+    <string name="email_us">Email us</string>
+    <string name="call_us">Call us</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="select_delivary_dialog">Select your prefferred delivery options before Checkout</string>
+    <string name="my_cart">My Cart</string>
+    <string name="total">Total</string>
+    <string name="price_dummy">\u20B9 600</string>
+    <string name="item">Item</string>
+    <string name="checkout">Checkout</string>
+    <string name="title_activity_delivery_options">DeliveryOptionsActivity</string>
+    <string name="delivery_dialog">Select Express or Scheduled delivery Option</string>
+    <string name="num_products">No. of Products : 1</string>
+    <string name="express_delivery">Express Delivery</string>
+    <string name="sheduled_delivery">Scheduled Delivery</string>
+    <string name="delivery_date">Delivery Date</string>
+    <string name="delivery_time">Delivery Time</string>
+    <string name="delivery_options">Delivery Options</string>
+    <string name="name">First Name</string>
+    <string name="name_last">Last Name</string>
+    <string name="phone_et">Mobile</string>
+    <string name="confi_password">Confirm Password</string>
+    <string name="register">Done !</string>
+    <string name="otp_dialog">Sit back &amp; Relax! while we varify your mobile number</string>
+    <string name="otp_dialog_2">(Please enter the otp below incase if the message is received on your phone)</string>
+    <string name="submit">Submit</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="home">Home</string>
+    <string name="settings_permission">Please provide the required permissions</string>
+    <string name="clear_all">Clear Queue</string>
+    <string name="payment_dialog">You need to pay the advance of \u20B9 100 inorder to complete the booking!</string>
 </resources>
